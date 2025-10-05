@@ -75,9 +75,9 @@
 
         // Filtrer uniquement les dossiers
         const folders = data.filter(item => item.type === "dir");
-
+        
         // Extraire date et nom
-          const events = folders.map(folder => {
+        const events = folders.map(folder => {
           const name = folder.name;
           const match = name.match(/^(\d{2}-\d{2}-\d{2})_(.+)_(.+)$/);
           if (!match) return null;
@@ -91,7 +91,7 @@
             url: `./${folder.name}/`
           };
         }).filter(Boolean);
-
+        
         // Trier du plus récent au plus ancien
         events.sort((a, b) => b.year - a.year);
 
