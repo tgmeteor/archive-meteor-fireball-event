@@ -93,7 +93,7 @@
         }).filter(Boolean);
         
         // Trier du plus récent au plus ancien
-        events.sort((a, b) => b.year - a.year);
+        events.sort((a, b) => b.date.localeCompare(a.date));
 
         // Afficher la liste
         list.innerHTML = "";
