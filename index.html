@@ -93,9 +93,6 @@
         }).filter(Boolean);
         
         // Trier du plus récent au plus ancien
-        events.sort((a, b) => b.date.localeCompare(a.date));
-
-        // Afficher la liste
         list.innerHTML = "";
         events.forEach(evt => {
           const li = document.createElement("li");
