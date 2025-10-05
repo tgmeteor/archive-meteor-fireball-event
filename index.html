@@ -36,6 +36,13 @@
     a {
       text-decoration: none;
       color: #0056b3;
+      font-weight: bold;
+      display: block;
+      font-size: 1.1em;
+    }
+    .year {
+      color: #666;
+      font-size: 0.9em;
     }
     footer {
       text-align: center;
@@ -54,8 +61,9 @@
   <footer>Archives publiques – hébergées sur GitHub Pages</footer>
 
   <script>
-    const githubUser = "tgmeteor";  // ← ton pseudo GitHub
-    const repoName = "archive-meteor-fireball-event";      // ← nom de ton dépôt
+    // ⚙️ À MODIFIER : ton pseudo GitHub et le nom de ton dépôt
+    const githubUser = "tgmeteor";  // ← ton identifiant GitHub
+    const repoName = "archive-meteor-fireball-event";     // ← le nom de ton dépôt
 
     async function loadFolders() {
       const list = document.getElementById("event-list");
@@ -65,8 +73,10 @@
         const response = await fetch(`https://api.github.com/repos/${githubUser}/${repoName}/contents/`);
         const data = await response.json();
 
+        // Filtrer uniquement les dossiers
         const folders = data.filter(item => item.type === "dir");
-
+        
+        // Extraire date et nom
         const events = folders.map(folder => {
           const name = folder.name;
           const match = name.match(/^(\d{2}-\d{2}-\d{2})_(.+)_(.+)$/);
@@ -81,10 +91,11 @@
             url: `./${folder.name}/`
           };
         }).filter(Boolean);
-
+        
         // Trier du plus récent au plus ancien
-        events.sort((a, b) => b.date.localeCompare(a.date));
+        events.sort((a, b) => b.year - a.year);
 
+        // Afficher la liste
         list.innerHTML = "";
         events.forEach(evt => {
           const li = document.createElement("li");
