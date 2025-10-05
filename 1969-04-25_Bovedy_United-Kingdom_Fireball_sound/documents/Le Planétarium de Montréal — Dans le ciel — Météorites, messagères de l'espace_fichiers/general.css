@@ -1,0 +1,393 @@
+DIV {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+BODY {
+	COLOR: #333; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif
+}
+H1 {
+	COLOR: #333; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif
+}
+H2 {
+	COLOR: #333; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif
+}
+H3 {
+	COLOR: #333; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif
+}
+H4 {
+	COLOR: #333; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif
+}
+H5 {
+	COLOR: #333; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif
+}
+H6 {
+	COLOR: #333; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif
+}
+P {
+	COLOR: #333; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif
+}
+UL {
+	COLOR: #333; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif
+}
+DL {
+	COLOR: #333; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif
+}
+TD {
+	COLOR: #333; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif
+}
+BODY {
+	FONT-WEIGHT: normal; FONT-SIZE: small; BACKGROUND-COLOR: #8c9faa
+}
+BODY A {
+	COLOR: #900
+}
+BODY A:hover {
+	COLOR: #666
+}
+HR {
+	MARGIN-TOP: 1ex; MARGIN-BOTTOM: 1ex
+}
+H1 {
+	MARGIN-TOP: 1.2ex; FONT-WEIGHT: bold; MARGIN-BOTTOM: 0.6ex
+}
+H2 {
+	MARGIN-TOP: 1.2ex; FONT-WEIGHT: bold; MARGIN-BOTTOM: 0.6ex
+}
+H3 {
+	MARGIN-TOP: 1.2ex; FONT-WEIGHT: bold; MARGIN-BOTTOM: 0.6ex
+}
+H4 {
+	MARGIN-TOP: 1.2ex; FONT-WEIGHT: bold; MARGIN-BOTTOM: 0.6ex
+}
+H5 {
+	MARGIN-TOP: 1.2ex; FONT-WEIGHT: bold; MARGIN-BOTTOM: 0.6ex
+}
+H6 {
+	MARGIN-TOP: 1.2ex; FONT-WEIGHT: bold; MARGIN-BOTTOM: 0.6ex
+}
+H1 {
+	FONT-SIZE: 30px
+}
+H2 {
+	FONT-SIZE: 24px
+}
+H3 {
+	FONT-SIZE: 18px
+}
+H4 {
+	FONT-SIZE: 14px; VERTICAL-ALIGN: top
+}
+H5 {
+	FONT-SIZE: 12px
+}
+H6 {
+	FONT-SIZE: 10px
+}
+P {
+	MARGIN-TOP: 1ex; FONT-SIZE: 13px; MARGIN-BOTTOM: 1ex; LINE-HEIGHT: 125%; MARGIN-RIGHT: 2ex
+}
+SUP {
+	FONT-SIZE: 70%; LINE-HEIGHT: 0.5ex
+}
+UL {
+	FONT-SIZE: 13px
+}
+DL {
+	FONT-SIZE: 13px
+}
+TD {
+	FONT-SIZE: 13px
+}
+.abstractclass {
+	MARGIN-TOP: 1.5ex; FONT-SIZE: 14px; MARGIN-BOTTOM: 1.5ex; LINE-HEIGHT: 20px; TEXT-ALIGN: justify
+}
+.missionclass {
+	MARGIN-TOP: 0.4ex; FONT-SIZE: 14px; MARGIN-BOTTOM: 0.4ex; LINE-HEIGHT: 20px
+}
+.border {
+	BORDER-RIGHT: gray 1px dotted
+}
+.dashedborder {
+	BORDER-RIGHT: #808080 1px dashed; PADDING-RIGHT: 5px; BORDER-TOP: #808080 1px dashed; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: #808080 1px dashed; PADDING-TOP: 5px; BORDER-BOTTOM: #808080 1px dashed
+}
+.top {
+	MARGIN-TOP: 0px
+}
+.bottom {
+	MARGIN-BOTTOM: 0px
+}
+.nomargin {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px
+}
+A {
+	TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+.creditsclass {
+	FONT-SIZE: 9px! important; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif
+}
+.smallclass {
+	MARGIN-TOP: 0px; FONT-SIZE: 10px! important; MARGIN-BOTTOM: 0px; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif
+}
+.creditsclass A {
+	
+}
+.navigation1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px! important; COLOR: yellow; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif
+}
+.navigation1 A {
+	COLOR: white; TEXT-DECORATION: none
+}
+.navigation1 A:visited {
+	TEXT-DECORATION: none
+}
+.navigation1 A:hover {
+	COLOR: yellow; TEXT-DECORATION: none
+}
+.navigation2 {
+	MARGIN-TOP: 0px; FONT-WEIGHT: bold; FONT-SIZE: 10px; MARGIN-BOTTOM: 0px; COLOR: yellow; FONT-STYLE: italic; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif
+}
+.navigation2 A {
+	COLOR: white; FONT-STYLE: normal; TEXT-DECORATION: none
+}
+.navigation2 A:visited {
+	TEXT-DECORATION: none
+}
+.navigation2 A:hover {
+	COLOR: yellow; TEXT-DECORATION: none
+}
+.navigation3 {
+	MARGIN-TOP: 0.5ex; FONT-WEIGHT: bold; FONT-SIZE: 10px; MARGIN-BOTTOM: 0ex; LINE-HEIGHT: 150%; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif
+}
+UL.listeplan {
+	PADDING-LEFT: 1ex; LIST-STYLE-POSITION: outside; MARGIN-LEFT: 1ex
+}
+UL.listeplan UL {
+	PADDING-LEFT: 15px; LIST-STYLE-POSITION: outside; MARGIN-LEFT: 1ex
+}
+UL.listedate {
+	MARGIN-TOP: 0.5ex; PADDING-LEFT: 1ex; LIST-STYLE-POSITION: outside; MARGIN-BOTTOM: 0.5ex; PADDING-BOTTOM: 0px; MARGIN-LEFT: 1.5ex; PADDING-TOP: 0px
+}
+UL.listeorange {
+	LIST-STYLE: none url(../../../Images/orange2.gif) outside; MARGIN-TOP: 0.25ex; PADDING-LEFT: 1ex; MARGIN-BOTTOM: 0.25ex; PADDING-BOTTOM: 0px; MARGIN-LEFT: 1.5ex; PADDING-TOP: 0px
+}
+UL.listerouge {
+	LIST-STYLE: none url(../../../Images/rouge2.gif) outside; MARGIN-TOP: 0.25ex; PADDING-LEFT: 1ex; MARGIN-BOTTOM: 0.25ex; PADDING-BOTTOM: 0px; MARGIN-LEFT: 1.5ex; PADDING-TOP: 0px
+}
+.tabletitleclass {
+	MARGIN-TOP: 0.1em; FONT-WEIGHT: bold; FONT-SIZE: 12px; MARGIN-BOTTOM: 0.1em; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif
+}
+.tocclass {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-WEIGHT: bold; FONT-SIZE: 9px; MARGIN-BOTTOM: 0.1em; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; FONT-FAMILY: 'Lucida Grande', "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif
+}
+.youarehereclass {
+	MARGIN-TOP: 10px; FONT-WEIGHT: normal; FONT-SIZE: 10px; MARGIN-LEFT: 10px; COLOR: #003; FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: transparent
+}
+.youarehereclass A {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 5px; COLOR: #003; PADDING-TOP: 5px; TEXT-DECORATION: none
+}
+.youarehereclass A:hover {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; TEXT-DECORATION: underline
+}
+.topmenuclass {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: normal; FONT-SIZE: 10px; MARGIN-BOTTOM: 0.1em; PADDING-BOTTOM: 3px; COLOR: #fff; PADDING-TOP: 3px; FONT-FAMILY: 'Lucida Grande', "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif
+}
+.topmenuclass A {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; PADDING-BOTTOM: 3px; COLOR: #fff; PADDING-TOP: 3px; TEXT-DECORATION: none
+}
+.communiquetitreclass {
+	FONT-WEIGHT: bold; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.communiqueinfoclass {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.communiquetableclass {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 5px; PADDING-BOTTOM: 0px; MARGIN-LEFT: 0px; PADDING-TOP: 0px
+}
+TABLE P {
+	COLOR: #333
+}
+TD P {
+	COLOR: #333
+}
+TABLE H1 {
+	COLOR: #333
+}
+TABLE H2 {
+	COLOR: #333
+}
+TABLE H3 {
+	COLOR: #333
+}
+TABLE H4 {
+	COLOR: #333
+}
+TABLE H5 {
+	COLOR: #333
+}
+TABLE H6 {
+	COLOR: #333
+}
+TD H1 {
+	COLOR: #333
+}
+TD H2 {
+	COLOR: #333
+}
+TD H3 {
+	COLOR: #333
+}
+TD H4 {
+	COLOR: #333
+}
+TD H5 {
+	COLOR: #333
+}
+TD H6 {
+	COLOR: #333
+}
+.navigationclass {
+	BACKGROUND: url(../../../Images/testBG256sans.gif) #000375 repeat-x
+}
+.arcterreclass {
+	BACKGROUND: url(../../../Images/arc_terre_640.gif) #000375 no-repeat left bottom
+}
+.bandeauclass {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND-IMAGE: url(../../../Images/bandeau720a.jpg); PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 720px; PADDING-TOP: 0px; HEIGHT: 138px
+}
+.bandeau1class {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND-IMAGE: url(../../../Images/bandeau718/helix_01.jpg); PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 359px; PADDING-TOP: 0px; HEIGHT: 53px
+}
+.bandeau2class {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND-IMAGE: url(../../../Images/bandeau718/helix_02.jpg); PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 359px; PADDING-TOP: 0px; HEIGHT: 53px
+}
+.bandeau3class {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND-IMAGE: url(../../../Images/bandeau718/helix_03.jpg); PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 718px; PADDING-TOP: 0px; HEIGHT: 37px
+}
+.corpsclass {
+	
+}
+.toprightclass {
+	RIGHT: 11px; BOTTOM: 75px; POSITION: relative
+}
+.topleftclass {
+	LEFT: 11px; BOTTOM: 72px; POSITION: relative
+}
+.ongletspositionclass {
+	
+}
+.auteur {
+	MARGIN-TOP: 0px; COLOR: #666; FONT-STYLE: italic
+}
+.invisible {
+	VISIBILITY: hidden
+}
+.legende {
+	FONT-SIZE: 10pt; TEXT-ALIGN: justify
+}
+.liste {
+	FONT-SIZE: 0.9em; LINE-HEIGHT: 125%; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.tableautitre {
+	FONT-STYLE: italic; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-ALIGN: center
+}
+.tableaucontenu {
+	FONT-SIZE: x-small; COLOR: black; LINE-HEIGHT: 125%; FONT-STYLE: italic; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.malegende {
+	FONT-SIZE: xx-small; TEXT-ALIGN: justify
+}
+.malegende_fiche {
+	FONT-SIZE: xx-small; COLOR: #ffffff; TEXT-ALIGN: justify
+}
+.styletexte {
+	FONT-SIZE: 0.9em; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-ALIGN: justify
+}
+.styletexte_fiche {
+	FONT-SIZE: 0.9em; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-ALIGN: justify
+}
+.meteorites {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 312px; PADDING-BOTTOM: 0px; WIDTH: 298px; PADDING-TOP: 10px
+}
+.meteorites_a {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 312px; PADDING-BOTTOM: 0px; WIDTH: 298px; PADDING-TOP: 8px; HEIGHT: 37px
+}
+.icones_vedette {
+	FLOAT: left; WIDTH: 490px
+}
+.aligner_meteorites_thumbs {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 20px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN-LEFT: 30px; WIDTH: 490px; PADDING-TOP: 30px
+}
+.aligner_fiche {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 80px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.aligner_meteorites_thumbs_2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 218px; PADDING-BOTTOM: 0px; PADDING-TOP: 30px
+}
+.meteorites_thumbs {
+	FLOAT: left; WIDTH: 115px
+}
+.fiche {
+	WIDTH: 440px
+}
+.titre_fiche {
+	FONT-WEIGHT: bold
+}
+.left {
+	FLOAT: left
+}
+.right {
+	FLOAT: right
+}
+.menuthematique {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 14px; PADDING-BOTTOM: 0px; WIDTH: 135px; PADDING-TOP: 0px
+}
+.thematique {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 55px
+}
+.thematique2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.type {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 10px
+}
+A.lien_thematique_courant:link {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; COLOR: #d0e5ac; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.lien_thematique_courant:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; COLOR: #d0e5ac; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.lien_thematique_courant:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; COLOR: #d0e5ac; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.lien_thematique:link {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.lien_thematique:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.lien_thematique:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; COLOR: #d0e5ac; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.lien_meteorites_thumbs:link {
+	FONT-SIZE: x-small; COLOR: #cadeaa; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.lien_meteorites_thumbs:visited {
+	FONT-SIZE: x-small; COLOR: #cadeaa; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.lien_meteorites_thumbs:hover {
+	FONT-SIZE: x-small; COLOR: #cadeaa; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.credit {
+	FONT-SIZE: x-small; TEXT-DECORATION: none
+}
+A.credit:hover {
+	FONT-SIZE: x-small; TEXT-DECORATION: underline
+}
+.textemauve {
+	COLOR: #777990
+}
+.border {
+	BORDER-RIGHT: #ff2400 0px solid; BORDER-TOP: #ff2400 0px solid; BORDER-LEFT: #ff2400 0px solid; BORDER-BOTTOM: #ff2400 0px solid; HEIGHT: 2400px
+}
