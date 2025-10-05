@@ -40,7 +40,7 @@
       display: block;
       font-size: 1.1em;
     }
-    .year {
+    .date {
       color: #666;
       font-size: 0.9em;
     }
@@ -75,31 +75,41 @@
 
         // Filtrer uniquement les dossiers
         const folders = data.filter(item => item.type === "dir");
-        
+
         // Extraire date et nom
         const events = folders.map(folder => {
           const name = folder.name;
-          const match = name.match(/^(\d{2}-\d{2}-\d{2})_(.+)_(.+)$/);
+          const match = name.match(/^(\d{2})-(\d{2})-(\d{2})_(.+)$/);
           if (!match) return null;
 
-          const date = match[1];        // YY-MM-DD
-          const eventName = match[2];   // Nom
-          const country = match[3];     // Pays
+          const yy = parseInt(match[1], 10);
+          const mm = match[2];
+          const dd = match[3];
+          const eventName = match[4].replace(/_/g, " ");
+          
+          // Convertir YY en YYYY (on suppose années 2000-2099)
+          const year = yy < 50 ? 2000 + yy : 1900 + yy;
+          const date = new Date(`${year}-${mm}-${dd}`);
+
           return {
             date: date,
-            display: `${date} : ${eventName} (${country})`,
+            displayDate: `${year}-${mm}-${dd}`,
+            eventName: eventName,
             url: `./${folder.name}/`
           };
         }).filter(Boolean);
-        
+
         // Trier du plus récent au plus ancien
-        events.sort((a, b) => b.year - a.year);
+        events.sort((a, b) => b.date - a.date);
 
         // Afficher la liste
         list.innerHTML = "";
         events.forEach(evt => {
           const li = document.createElement("li");
-          li.innerHTML = `<a href="${evt.url}">${evt.display}</a>`;
+          li.innerHTML = `
+            <a href="${evt.url}">${evt.eventName}</a>
+            <span class="date">${evt.displayDate}</span>
+          `;
           list.appendChild(li);
         });
 
