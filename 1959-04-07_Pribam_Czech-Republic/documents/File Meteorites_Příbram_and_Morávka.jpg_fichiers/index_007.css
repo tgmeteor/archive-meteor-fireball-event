@@ -1,0 +1,36 @@
+/* Styles for collapsible divs to be used in templates.
+   Background stolen from Vector menus.
+*/
+div.collapsibletemplate .headertext {
+   padding-left: 18px;
+   color: #4d4d4d;
+   background: url(http://bits.wikimedia.org/w/extensions/UsabilityInitiative/images/vector/collapsibleNav/arrow-down.png) 0 50% no-repeat;
+}
+div.collapsibletemplate.collapsed .headertext {
+   color: #0645ad;
+   background: url(http://bits.wikimedia.org/w/extensions/UsabilityInitiative/images/vector/collapsibleNav/arrow-right.png) 0 50% no-repeat;
+}
+div.collapsibletemplate .header {
+   padding: 3px;
+   
+   cursor: pointer;
+}
+table.collapsible tbody tr th {
+   color: #4d4d4d;
+   padding-right: 18px;
+   background: url(http://bits.wikimedia.org/w/extensions/UsabilityInitiative/images/vector/collapsibleNav/arrow-down.png) 99% 50% no-repeat;
+}
+table.collapsible.collapsed tbody tr th {
+   color: #0645ad;
+   background: url(http://bits.wikimedia.org/w/extensions/UsabilityInitiative/images/vector/collapsibleNav/arrow-right.png) 99% 50% no-repeat;
+   cursor: pointer;
+}
+/* Class for template content that should be shown locally, even if JS is disabled,
+   but should not be visible on file pages shown on other sites.
+   Use with style="display:none". Interacts with collapsible divs (see above).
+*/
+div.show-on-commons { display: block !important; }
+
+.hidden{
+display:none;
+}

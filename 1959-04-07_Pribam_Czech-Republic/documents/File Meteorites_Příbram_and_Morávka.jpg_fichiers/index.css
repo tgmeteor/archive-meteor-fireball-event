@@ -1,0 +1,25 @@
+/* CSS placed here will affect users of the Vector skin */
+
+/* Necessary for displaying text in the upper right edge. (Used in [[Template:Shortcut]].) */
+#shortcut {
+   display: inline;
+   position: absolute; z-index: 1; border: none; background: none; right: 12px; top: .3em; float: right; margin: 0;
+   padding: 0; line-height: 1.5em; text-align: right; text-indent: 0; font-size: 90%; text-transform: none; white-space: normal;
+}
+/* For positioning icons at top-right, used in Templates with protection locks */
+div.topicon {
+ position: absolute;
+ top: -3em;
+ margin-right: -10px;
+ display: block !important;
+}
+
+/* Remove once r69335 is live */
+pre, code, tt {
+ font-family: "Courier New", monospace!important;
+}
+pre, code {
+ word-wrap: break-word;
+ border: 1px solid #EBEBEB;
+ background-color: #F7F7F7;
+}
