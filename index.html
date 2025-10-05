@@ -76,14 +76,25 @@
         // Filtrer uniquement les dossiers
         const folders = data.filter(item => item.type === "dir");
 
-        // Extraire les infos (année + nom)
+        // Extraire date et nom
         const events = folders.map(folder => {
           const name = folder.name;
-          const match = name.match(/^(\d{4})[-_](.+)$/);
+          const match = name.match(/^(\d{2})-(\d{2})-(\d{2})_(.+)$/);
           if (!match) return null;
+
+          const yy = parseInt(match[1], 10);
+          const mm = match[2];
+          const dd = match[3];
+          const eventName = match[4].replace(/_/g, " ");
+          
+          // Convertir YY en YYYY (on suppose années 2000-2099)
+          const year = yy < 50 ? 2000 + yy : 1900 + yy;
+          const date = new Date(`${year}-${mm}-${dd}`);
+
           return {
-            year: parseInt(match[1]),
-            eventName: match[2].replace(/[-_]/g, " "),
+            date: date,
+            displayDate: `${year}-${mm}-${dd}`,
+            eventName: eventName,
             url: `./${folder.name}/`
           };
         }).filter(Boolean);
@@ -97,7 +108,7 @@
           const li = document.createElement("li");
           li.innerHTML = `
             <a href="${evt.url}">${evt.eventName}</a>
-            <span class="year">${evt.year}</span>
+            <span class="date">${evt.displayDate}</span>
           `;
           list.appendChild(li);
         });
