@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archives des Événements</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      margin: 0;
+      padding: 2rem;
+      color: #222;
+    }
+    h1 {
+      text-align: center;
+      color: #444;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 700px;
+      margin: 2rem auto;
+    }
+    li {
+      background: #fff;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: transform 0.1s ease-in-out;
+    }
+    li:hover {
+      transform: scale(1.02);
+    }
+    a {
+      text-decoration: none;
+      color: #0056b3;
+      font-weight: bold;
+      display: block;
+      font-size: 1.1em;
+    }
+    .year {
+      color: #666;
+      font-size: 0.9em;
+    }
+    footer {
+      text-align: center;
+      color: #888;
+      margin-top: 3rem;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Archives des Événements</h1>
+  <ul id="event-list">
+    <li>Chargement des événements...</li>
+  </ul>
+
+  <footer>Archives publiques – hébergées sur GitHub Pages</footer>
+
+  <script>
+    // ⚙️ À MODIFIER : ton pseudo GitHub et le nom de ton dépôt
+    const githubUser = "tonpseudo";  // ← ton identifiant GitHub
+    const repoName = "archives";     // ← le nom de ton dépôt
+
+    async function loadFolders() {
+      const list = document.getElementById("event-list");
+      list.innerHTML = "<li>Chargement en cours...</li>";
+
+      try {
+        const response = await fetch(`https://api.github.com/repos/${githubUser}/${repoName}/contents/`);
+        const data = await response.json();
+
+        // Filtrer uniquement les dossiers
+        const folders = data.filter(item => item.type === "dir");
+
+        // Extraire les infos (année + nom)
+        const events = folders.map(folder => {
+          const name = folder.name;
+          const match = name.match(/^(\d{4})[-_](.+)$/);
+          if (!match) return null;
+          return {
+            year: parseInt(match[1]),
+            eventName: match[2].replace(/[-_]/g, " "),
+            url: `./${folder.name}/`
+          };
+        }).filter(Boolean);
+
+        // Trier du plus récent au plus ancien
+        events.sort((a, b) => b.year - a.year);
+
+        // Afficher la liste
+        list.innerHTML = "";
+        events.forEach(evt => {
+          const li = document.createElement("li");
+          li.innerHTML = `
+            <a href="${evt.url}">${evt.eventName}</a>
+            <span class="year">${evt.year}</span>
+          `;
+          list.appendChild(li);
+        });
+
+        if (events.length === 0) {
+          list.innerHTML = "<li>Aucun événement trouvé.</li>";
+        }
+
+      } catch (error) {
+        console.error(error);
+        list.innerHTML = "<li>Erreur de chargement. Vérifie le nom du dépôt.</li>";
+      }
+    }
+
+    loadFolders();
+  </script>
+</body>
+</html>
